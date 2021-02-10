@@ -1,0 +1,87 @@
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #000;
+}
+.img-logo {
+  width: 100px;
+}
+
+.icon-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.icon-button.user {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .img-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left-icon,
+  .right-icon {
+    position: absolute;
+    top: -25px;
+  }
+
+  .right-icon {
+    right: 0;
+  }
+
+  .right-icon :not(:last-child) {
+    margin-right: 20px;
+  }
+  .left-icon :not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .section {
+    border-top: 1px solid #000;
+  }
+  .section .list {
+    display: none;
+  }
+
+  /* .section.surf {
+    display: inline-flex;
+  } */
+}
